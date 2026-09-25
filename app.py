@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 st.title("Python Fundamentals")
 st.sidebar.title("Parámetros")
@@ -12,6 +13,10 @@ if modulo == "Listas":
   st.write(lista)
 elif modulo == "Arreglos":
   st.write("Te encuentras en el módulo de arreglos")
+  valor_inicial_array = st.number_input("Ingresa tu valor inicial del arreglo",min_value = 0,max_value = 100,value = 10)
+  valor_final_array = st.number_input("Ingresa tu valor final del arreglo",min_value = 0,max_value = 100,value = 20)
+  arreglo = list(range(int(valor_inicial_array),int(valor_final_array)))
+  st.write(arreglo)  
 elif modulo == "Funciones":
   st.write("Te encuentras en el módulo de funciones")
 else:
