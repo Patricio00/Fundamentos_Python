@@ -23,9 +23,9 @@ elif modulo == "Arreglos":
 elif modulo == "Funciones":
   st.write("Te encuentras en el módulo de funciones")
   principal = st.number_input("Monto del Préstamo", value=1000)
-  tasa = st.numberinput("Tasa anual en decimal", value=0.15)
-  anios = st.numberinput("Número de años del préstamo", value=1)
-  pagos_por_anio = st.numberinput("Cantidad de Pagos por Año", value=12)
+  tasa = st.number_input("Tasa anual en decimal", value=0.15)
+  anios = st.number_input("Número de años del préstamo", value=1)
+  pagos_por_anio = st.number_input("Cantidad de Pagos por Año", value=12)
   cuota = lf.cuota_prestamo(principal,tasa,anios,pagos_por_anio)
   st.write (cuota)
 else:
