@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import libreria_funciones as lf
 
 st.sidebar.image ("Python.png",width=100)
 
@@ -21,6 +22,12 @@ elif modulo == "Arreglos":
   st.write(arreglo)  
 elif modulo == "Funciones":
   st.write("Te encuentras en el módulo de funciones")
+  principal = st.number_input("Monto del Préstamo", value=1000)
+  tasa = st.numberinput("Tasa anual en decimal", value=0.15)
+  anios = st.numberinput("Número de años del préstamo", value=1)
+  pagos_por_anio = st.numberinput("Cantidad de Pagos por Año", value=12)
+  cuota = lf.cuota_prestamo(principal,tasa,anios,pagos_por_anio)
+  st.write (cuota)
 else:
   st.write("Te encuentras en el módulo de POO")
   
