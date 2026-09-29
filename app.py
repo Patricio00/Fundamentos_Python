@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 
-st.image ("Python.png")
+st.image ("Python.png",width=250)
 
 st.title("Python Fundamentals")
 st.sidebar.title("Parámetros")
