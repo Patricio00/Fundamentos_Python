@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 
+st.image ("Python.png")
+
 st.title("Python Fundamentals")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Patricio Jarrín")
